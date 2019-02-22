@@ -482,3 +482,5 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] Consume data de forma dinámica (`fetch()`).
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
+
+TEST 
