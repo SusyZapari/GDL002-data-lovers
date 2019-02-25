@@ -4,5 +4,29 @@
 const example = () => {
   return 'example';
 };
-
+function fillElements (pokemonList, divElement){
+  for(let i=0; i<pokemonList.length; i++) {
+    let divPokemon = document.createElement("div");
+    divPokemon.className = "pokemon";
+    divPokemon.innerHTML = "<img src=\"" +pokemonList[i].img + "\">";
+    divElement.insertAdjacentElement("beforeend", divPokemon);
+  }
+  }
+  
+  function showPokemons(){
+  let pokemonList = POKEMON.pokemon;
+  let divPokemonList = document.getElementById("listOfPokemons");
+  fillElements(pokemonList, divPokemonList);
+  }
 window.example = example;
+
+
+
+function filtersYears () {
+  const result = INJURIES.filter(
+    injurie => parseInt(injurie.Year.substring(0,4)) >= 2010 && parseInt(injurie.Year.substring(0,4)) < 2016
+  );
+
+console.log(result);
+}
+
