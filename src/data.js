@@ -19,3 +19,14 @@ function fillElements (pokemonList, divElement){
   fillElements(pokemonList, divPokemonList);
   }
 window.example = example;
+
+
+
+function filtersYears () {
+  const result = INJURIES.filter(
+    injurie => parseInt(injurie.Year.substring(0,4)) >= 2010 && parseInt(injurie.Year.substring(0,4)) < 2016
+  );
+
+console.log(result);
+}
+
