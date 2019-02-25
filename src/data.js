@@ -21,6 +21,7 @@ function fillElements (pokemonList, divElement){
 window.example = example;
 
 
+//esta función es útil para delimitar los años del 2010 a 2015 únicamente//
 
 function filtersYears () {
   const result = INJURIES.filter(
@@ -29,4 +30,5 @@ function filtersYears () {
 
 console.log(result);
 }
+
 
