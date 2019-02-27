@@ -1,15 +1,18 @@
 #root {
-    background: url(../src/img/bg-phone2.jpg);
+    background: url(../src/img/bg-phone3.jpg);
     width: 100%;
     height: 100vh;
     vertical-align: middle;
     background-position-x: 40%;
     background-position-y: 40%;
+    background-size: cover;
+    padding-top: 7%;
 }
 #form-login {
     text-align: center;
     width: 100%;
     margin: auto;
+    color: #ffffff;
 }
 #login-button {
     margin-top: 8%;
@@ -20,7 +23,7 @@
     background: #0d1fff;
     background: -webkit-linear-gradient(to left,#ff5908, #f7b43b);
     background: linear-gradient(to left, #ff5908, #f7b43b);
-    color: white;
+    color: #ffffff;
 }
 #img-logo {
     margin-top: 5%;
@@ -34,9 +37,12 @@
     width: 80%; 
     height: 4em;
 }
-.form-titles{
+.form-titles {
     font-size: 1.2em;
     font-weight: 300;
+}
+.white-text{
+    color: #ffffff !important;
 }
 .mdl-textfield__input  {
     margin: auto !important; 
@@ -48,4 +54,12 @@
     padding-left: 8px;
     padding-top: 4px;
     color: rgb(27, 27, 27);
-  }
+}
+.input-class {
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 75%;
+    height: 1.8em;
+    border-radius: 40px;
+    padding: 10px 10px 10px 10px;
+}
