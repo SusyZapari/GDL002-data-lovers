@@ -7,7 +7,7 @@ Esta aplicación evalúa los indicadores de heridos en los distintos medios de t
 
 ## Sección de prototipado:
 
-#### Baja fidelidad
+### Baja fidelidad
 ![enter image description here](https://lh3.googleusercontent.com/2xs88AJZdnnobFlJag2wvalX1FZHSK1xd4RT_YJcaroVvNStnPz3gq0NXeDPuJHNKyIJ-6TBUqj1 "Desktop") 
 
 ![enter image description here](https://lh3.googleusercontent.com/kdQHQbEGKVyu0OFfTSHqAujhEoc9i2E4s4X-BicbllYo1us6lBNMIKgaN0PCSMJct9emWksgskPK "wireframe")
