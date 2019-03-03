@@ -19,51 +19,61 @@
 
 <body>
     <!-- Simple header with fixed tabs. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
+            <div id="headerRoadApp" class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Titlefsdfsdf</span>
+                <span class="mdl-layout-title">Road Eye</span>
             </div>
         </header>
         <!--Menu deslizable-->
-        <div class="mdl-layout__drawer">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div id="drawer" class="mdl-layout__drawer">
             <span class="mdl-layout-title">Road Eye App</span>
             <!--Links Menu-->
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+            <nav id="linksNav" class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index_menu.html">Inicio</a>
+                <a class="mdl-navigation__link" href="index_menu.html">Autobús</a>
+                <a class="mdl-navigation__link" href="index_menu.html">Automóvil</a>
+                <a class="mdl-navigation__link" href="index_menu.html">Avión</a>
+                <a class="mdl-navigation__link" href="categories.html">Bicicleta</a>
+                <a class="mdl-navigation__link" href="index_menu.html">Motocicleta</a>
+                <a class="mdl-navigation__link" href="index_menu.html">Peatón</a>
+                <a class="mdl-navigation__link" href="index.html">Cerrar Sesión</a>
             </nav>
         </div>
+    </div>
         <!--Info general-->
         <main class="mdl-layout__content">
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--12-col-desktop mdl-cell--12-col-tablet height-welcome ">
-                    <span>Crear nueva cuenta</span>
+                    <span>Bienvenidos</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Crear nueva cuenta</span>
+                    <span>Automóvil</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Olvidé mi contraseña</span>
+                    <span>Avión</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Bicicleta</span>
+                    <a href="categories.html" class="btn btn-success">Bicicleta</a>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Olvidé mi contraseña</span>
+                    <span>Motocicleta</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Olvidé mi contraseña</span>
+                    <span>Peatón</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Olvidé mi contraseña</span>
+                    <span>Autobús</span>
                 </div>
             </div>
         </main>
     </div>
+    <!--Scripts JS-->
+    <script src="./data/injuries/injuries.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -17,4 +17,15 @@
 .height-welcome {
     height: 10vh;
 }
-
+#drawer.mdl-layout__drawer {
+    background: #1b1b1b;
+    color: #ffffff;
+}
+#headerRoadApp.mdl-layout__header-row{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav#linksNav a.mdl-navigation__link {
+    color: #d2d2d2;
+}
