@@ -1,5 +1,15 @@
+/*Styles for testing grid*/
 .mdl-cell {
-    margin: 0px !important;
+    box-sizing: border-box;
+    background-color: #BDBDBD;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: white;
+  }
+/*Styles for testing grid*/
+
+.mdl-cell {
+    margin: 5px !important;
 }
 #drawerCat.mdl-layout__drawer {
     background: #1b1b1b;
@@ -17,3 +27,21 @@ nav#linksNavCat a.mdl-navigation__link {
     width: 70%;
     margin: auto;
 }
+.myClass {
+    font-size: 2em;
+}
+.headerBici{
+    width: 70%;
+    margin: auto;
+}
+#imgStats{
+    background: url(../src/img/statsBici-red.png);
+    background-size: 100%;
+
+}
+.text-center {
+    text-align: center;
+}
+
+
+
