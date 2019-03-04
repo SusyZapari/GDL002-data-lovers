@@ -7,7 +7,10 @@
     color: white;
   }
 Styles for testing grid*/
-
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 .mdl-cell {
     margin: 5px !important;
 }
@@ -26,6 +29,11 @@ nav#linksNavCat a.mdl-navigation__link {
 }
 nav#linksNavCat.mdl-navigation a.mdl-navigation__link:hover {
     color: black !important;
+}
+.down{
+    font-size: 2em;
+    color: #0d8c40;
+    font-weight: 300; 
 }
 #tableBici.mdl-data-table.mdl-js-data-table{
     width: 70%;

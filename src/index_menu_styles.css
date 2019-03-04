@@ -1,4 +1,8 @@
 /* Estilos para Square card*/
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 .demo-card-square.mdl-card {
     width: 320px;
     height: 320px;
@@ -15,11 +19,14 @@
     border-radius: 20px;
 
 }
+nav#linksNav.mdl-navigation a.mdl-navigation__link:hover {
+    color: black !important;
+}
 img.img-stats{
     width: 60%;
 }
 .height-welcome {
-    height: 10vh;
+    height: 5vh;
 }
 #drawer.mdl-layout__drawer {
     background: #1b1b1b;
@@ -29,7 +36,7 @@ img.img-stats{
 .titles-general{
     font-size: 1.5em;
     font-weight: 600;
-    color: #868686;
+    color: #f96d41;
 }
 #headerRoadApp.mdl-layout__header-row{
     background: #0575E6;  /* fallback for old browsers */
