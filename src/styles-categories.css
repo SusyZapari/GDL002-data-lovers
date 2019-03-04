@@ -34,10 +34,8 @@ nav#linksNavCat a.mdl-navigation__link {
     width: 70%;
     margin: auto;
 }
-#imgStats{
-    background: url(../src/img/statsBici-red.png);
-    background-size: 100%;
-
+img.img-stats{
+    width: 80%;
 }
 .text-center {
     text-align: center;
