@@ -11,6 +11,9 @@
     <!--Ayuda para el responsive en todos los dispositivos-->
     <!--Aqui se ponen las hojas de estilo-->
     <link rel="stylesheet" href="index_menu_styles.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--Añadir la librería Material Design Lite-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -28,44 +31,63 @@
         </header>
         <!--Menu deslizable-->
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-        <div id="drawer" class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Road Eye App</span>
-            <!--Links Menu-->
-            <nav id="linksNav" class="mdl-navigation">
-                <a class="mdl-navigation__link" href="index_menu.html">Inicio</a>
-                <a class="mdl-navigation__link" href="index_menu.html">Autobús</a>
-                <a class="mdl-navigation__link" href="index_menu.html">Automóvil</a>
-                <a class="mdl-navigation__link" href="index_menu.html">Avión</a>
-                <a class="mdl-navigation__link" href="categories.html">Bicicleta</a>
-                <a class="mdl-navigation__link" href="index_menu.html">Motocicleta</a>
-                <a class="mdl-navigation__link" href="index_menu.html">Peatón</a>
-                <a class="mdl-navigation__link" href="index.html">Cerrar Sesión</a>
-            </nav>
+            <div id="drawer" class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Road Eye App</span>
+                <!--Links Menu-->
+                <nav id="linksNav" class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index_menu.html"><i class="fas fa-home fa-lg"></i> Inicio</a>
+                    <a class="mdl-navigation__link" href="index_menu.html"><i class="fas fa-bus fa-lg"></i> Autobús</a>
+                    <a class="mdl-navigation__link" href="index_menu.html"><i class="fas fa-car fa-lg"></i>
+                        Automóvil</a>
+                    <a class="mdl-navigation__link" href="index_menu.html"><i class="fas fa-plane-departure fa-lg"></i>
+                        Avión</a>
+                    <a class="mdl-navigation__link" href="categories.html"><i class="fas fa-bicycle fa-lg"></i>
+                        Bicicleta</a>
+                    <a class="mdl-navigation__link" href="index_menu.html"><i class="fas fa-motorcycle fa-lg"></i>
+                        Motocicleta</a>
+                    <a class="mdl-navigation__link" href="index_menu.html"><i class="fas fa-walking fa-lg"></i>
+                        Peatón</a>
+                    <a class="mdl-navigation__link" href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i> Cerrar
+                        Sesión</a>
+                </nav>
+            </div>
         </div>
-    </div>
         <!--Info general-->
         <main class="mdl-layout__content">
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--12-col-desktop mdl-cell--12-col-tablet height-welcome ">
+                <div
+                    class="mdl-cell mdl-cell--4-col-phone mdl-cell--12-col-desktop mdl-cell--12-col-tablet height-welcome ">
                     <span>Bienvenidos</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Automóvil</span>
+                    <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                    <p class="titles-general">Automóvil</p>
+                    <span>
+                        En este indicador podrás revisar los datos totales de personas lesionadas por alguna situación
+                        al conducir.
+                    </span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Avión</span>
+                    <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                    <p class="titles-general">Autobús</p>
+                    <span>En este indicador podrás revisar los datos totales de personas lesionadas por alguna situación
+                        concreta al viajar/trasladarse en autobús.</span>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <a id="button-choose-bike" href="categories.html" class="btn btn-success">Bicicleta</a>
+                    <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                    <p><a id="button-choose-bike" href="categories.html" p class="titles-general">Bicicleta</a></p>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Motocicleta</span>
+                    <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                    <p class="titles-general">Motocicleta</p>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Peatón</span>
+                    <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                    <p class="titles-general">Peatón</p>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col-phone mdl-cell--4-col-desktop button-style ">
-                    <span>Autobús</span>
+                    <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                    <p class="titles-general">Autobús</p>
                 </div>
             </div>
         </main>

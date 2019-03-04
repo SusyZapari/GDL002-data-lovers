@@ -5,6 +5,10 @@ newArr = window.roadEye.sortYearsOld(newArr);
 let tableHtmlBici = document.querySelector('#tableBici tbody');
 window.roadEye.fillTableBici(tableHtmlBici, newArr);
 
+
+const stat = document.getElementById('statsImprove');
+stat.innerHTML = window.roadEye.getPercent(50000, 45000) + "%";
+
 let sortOldNew = () => {
     const buttonOld = document.getElementById('option-one-old');
     buttonOld.onclick = function () {

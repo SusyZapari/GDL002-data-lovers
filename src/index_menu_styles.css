@@ -9,10 +9,14 @@
     url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
 }
 .button-style {
-    background-color: darkorange;
-    height: 24vh;
+    background-color: white;
     padding: 1%;
+    box-shadow: 1px 6px 20px 2px #0000002b;
+    border-radius: 20px;
 
+}
+img.img-stats{
+    width: 60%;
 }
 .height-welcome {
     height: 10vh;
@@ -20,6 +24,12 @@
 #drawer.mdl-layout__drawer {
     background: #1b1b1b;
     color: #ffffff;
+    border: none;
+}
+.titles-general{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #868686;
 }
 #headerRoadApp.mdl-layout__header-row{
     background: #0575E6;  /* fallback for old browsers */

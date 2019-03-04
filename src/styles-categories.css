@@ -1,4 +1,4 @@
-/*Styles for testing grid*/
+/*Styles for testing grid
 .mdl-cell {
     box-sizing: border-box;
     background-color: #BDBDBD;
@@ -6,7 +6,7 @@
     padding-top: 4px;
     color: white;
   }
-/*Styles for testing grid*/
+Styles for testing grid*/
 
 .mdl-cell {
     margin: 5px !important;
@@ -14,6 +14,7 @@
 #drawerCat.mdl-layout__drawer {
     background: #1b1b1b;
     color: #ffffff;
+    border: none;
 }
 #headerRoadAppCat.mdl-layout__header-row{
     background: #0575E6;  /* fallback for old browsers */
@@ -23,9 +24,20 @@
 nav#linksNavCat a.mdl-navigation__link {
     color: #d2d2d2;
 }
+nav#linksNavCat.mdl-navigation a.mdl-navigation__link:hover {
+    color: black !important;
+}
 #tableBici.mdl-data-table.mdl-js-data-table{
     width: 70%;
     margin: auto;
+}
+div #generalStats div.mdl-cell mdl-cell--4-col text-center{
+    padding-top: 6%;
+}
+#statsImprove{
+    font-size: 3em;
+    color: #0d8c40;
+    font-weight: 800;
 }
 .myClass {
     font-size: 2em;
@@ -35,11 +47,15 @@ nav#linksNavCat a.mdl-navigation__link {
     margin: auto;
 }
 img.img-stats{
-    width: 80%;
+    width: 60%;
 }
 .text-center {
     text-align: center;
 }
-
+.titles-app{
+    color: #424242;
+    font-size: 1.5em;
+    font-weight: 900;
+}
 
 
