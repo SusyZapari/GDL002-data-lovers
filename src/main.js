@@ -1,9 +1,13 @@
 
-
+//Print Bicycle Data in Table
 const newArrFiltered = window.roadEye.filtersYears(INJURIES);
 console.log(newArrFiltered);
 let newArr = window.roadEye.newArrBiciYear(newArrFiltered);
 console.log(newArr);
+let tableHtmlBici = document.querySelector("#tableBici tbody");
+window.roadEye.fillTableBici(tableHtmlBici, newArr);
+
+/*[[52000, 2010, 1],[48000, 2011, 2],[49000, 2012, 3],[48000, 2013, 4],[50000, 2014, 5],[45000, 2015, 6]]*/
 
 /*document.getElementById("showData").addEventListener("click", displayInjuryData = () => {
     document.getElementById("fixed-tab-2").innerHTML =  mappedData;

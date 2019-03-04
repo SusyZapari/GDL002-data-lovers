@@ -5,24 +5,38 @@
 };*/
 //Esta función es útil para delimitar los años del 2010 a 2015 únicamente//
 window.roadEye = {
-  
-  filtersYears:  (dataInjuries) => { 
-    const result = dataInjuries.filter(
-      injurie => {
-        return parseInt(injurie.Year.substring(0, 4)) >= 2010 && parseInt(injurie.Year.substring(0, 4)) < 2016;
-      }
-    );
-    return result;
-  },
-  
-  newArrBiciYear: (dataFiltered) => {
-    const arrMapped2 = dataFiltered.map(
-        element => {
-          return [element.Total_Injured_Persons_Pedalcyclists, parseInt(element.Year.substring(0, 4))];
+
+    filtersYears: (dataInjuries) => {
+        const result = dataInjuries.filter(
+            injurie => {
+                return parseInt(injurie.Year.substring(0, 4)) >= 2010 && parseInt(injurie.Year.substring(0, 4)) < 2016;
+            }
+        );
+        return result;
+    },
+
+    newArrBiciYear: (dataFiltered) => {
+        let order = 0;
+        const arrMapped2 = dataFiltered.map(
+            element => {
+                return [++order, parseInt(element.Year.substring(0, 4)), element.Total_Injured_Persons_Pedalcyclists];
+            }
+        );
+        return arrMapped2;
+    },
+
+    fillTableBici: (table, data) => {
+        for (var i = 0; i < data.length; i++) {
+            // create a new row
+            var newRow = table.insertRow(table.length);
+            for (var j = 0; j < data[i].length; j++) {
+                // create a new cell
+                var cell = newRow.insertCell(j);
+                // add value to the cell
+                cell.innerHTML = data[i][j];
+            }
         }
-      );
-    return arrMapped2;  
-  }
+    }
 
 };
 /*
@@ -34,7 +48,7 @@ mappedBici: (dataFiltered) => {
       }
     );
   newArr = arrMapped;
-  return newArr;  
+  return newArr;
 },
 
 mappedBiciSort: (mappedBici) => {
@@ -56,11 +70,11 @@ mappedBiciSort: (mappedBici) => {
       }
     );
     return [yearMapped, arrMapped];
-    
+
 },*/
 /*
 mappedBiciSort: (mappedBici) => {
-  
+
 }
 */
 
@@ -75,7 +89,7 @@ newArrFiltered.map(element => {
       ; return xyz; });
 
 
-      
+
 let iterador = () => {
   let newt = [];
     for(var i = 0; i < newArrFiltered.length; i++) {
@@ -84,7 +98,7 @@ let iterador = () => {
     return newt;
  };
 const filterObj = {
-  filtersYears:  (dataInjuries) => { 
+  filtersYears:  (dataInjuries) => {
     const result = dataInjuries.filter(
       injurie => {
         return parseInt(injurie.Year.substring(0, 4)) >= 2010 && parseInt(injurie.Year.substring(0, 4)) < 2016;
@@ -114,7 +128,7 @@ window.filterObj = filterObj;
   );
 return result;
 };*/
- 
+
 //Global Object Window
 /*window.filterYears = filterYears;*/
 
