@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="bike-styles.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--Material Lite-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+    <!-- Div Container Layout -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <!-- Header -->
+        <header class="mdl-layout__header">
+            <div id="headerRoadAppCat" class="mdl-layout__header-row">
+                <!-- Title Website -->
+                <span class="mdl-layout-title">Road Eye</span>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Vista General</a>
+                <a href="#fixed-tab-2" class="mdl-layout__tab">Datos Cronológicos</a>
+            </div>
+        </header>
+        <!--Drawer Menu-->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+            <div id="drawerCat" class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Road Eye</span>
+                <!--Links Menu-->
+                <nav id="linksNavCat" class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="dashboard.html"><i class="fas fa-home fa-lg"></i> Inicio</a>
+                    <a class="mdl-navigation__link" href="dashboard.html"><i class="fas fa-bus fa-lg"></i> Autobús</a>
+                    <a class="mdl-navigation__link" href="dashboard.html"><i class="fas fa-car fa-lg"></i>
+                        Automóvil</a>
+                    <a class="mdl-navigation__link" href="dashboard.html"><i class="fas fa-plane-departure fa-lg"></i>
+                        Avión</a>
+                    <a class="mdl-navigation__link" href="bike.html"><i class="fas fa-bicycle fa-lg"></i>
+                        Bicicleta</a>
+                    <a class="mdl-navigation__link" href="dashboard.html"><i class="fas fa-motorcycle fa-lg"></i>
+                        Motocicleta</a>
+                    <a class="mdl-navigation__link" href="dashboard.html"><i class="fas fa-walking fa-lg"></i>
+                        Peatón</a>
+                    <a class="mdl-navigation__link" href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i> Cerrar
+                        Sesión</a>
+                </nav>
+            </div>
+        </div>
+        <!--All content in general-->
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="page-content">
+                    <br>
+                    <br>
+                    <br>
+                    <div id="generalStats" class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col text-center">
+                            <img class="img-stats" src="../src/img/statsBici-red-up.png">
+                            <br>
+                            <br>
+                            <p class="titles-app">2014</p>
+                            <span>50,000 Heridos</span>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col text-center">
+                            <img class="img-stats" src="../src/img/statsBici-green-down.png">
+                            <br>
+                            <br>
+                            <p class="titles-app">2015</p>
+                            <span>45,000 Heridos</span>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col text-center">
+                            <br>
+                            <br>
+                            <br>
+                            <p class="titles-app">Índice de Mejora</p>
+                            <p id="statsTitle" class="down">Bajó</p>
+                            <p id="statsImprove"></p>
+                            <span>Su índice de heridos respecto al año anterior</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">
+                    <!-- Your content goes here -->
+                    <article class="headerBici">
+                        <br>
+                        <br>
+
+                        <p>CICLO 2010 - 2015 MEDIO DE MOVILIDAD: BICICLETA</p>
+                        <button type="submit" id="option-one-old"
+                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            name="button" value="">
+                            Antiguo a Reciente
+                        </button>
+                        <button type="submit" id="option-two-new"
+                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            name="button" value="">
+                            Reciente a Antiguo
+                        </button>
+                        <br>
+                        <br>
+
+                    </article>
+                    <article id="injure">
+                        <table id="tableBici" class="mdl-data-table mdl-js-data-table">
+                            <thead>
+                                <tr>
+                                    <th>Orden</th>
+                                    <th>Año</th>
+                                    <th>Número de heridos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!--Scripts JS-->
+    <script src="./data/injuries/injuries.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
